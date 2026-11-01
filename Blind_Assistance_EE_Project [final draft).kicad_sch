@@ -2054,7 +2054,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "New_Library2:PTS526_SM15_SMTR2_LFS"
+		(symbol "New_Library2:PTS525SM15SMTR2LFS"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2063,8 +2063,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at -2.54 2.54 0)
+			(property "Reference" "S"
+				(at -5.0838 5.5922 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2074,8 +2074,8 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "PTS526_SM15_SMTR2_LFS"
-				(at -2.54 -2.54 0)
+			(property "Value" "PTS525SM15SMTR2LFS"
+				(at -5.0809 -7.3672 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2085,7 +2085,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "PTS526_SM15_SMTR2_LFS:PTS526SM15SMTR2LFS"
+			(property "Footprint" "PTS525SM15SMTR2LFS:SW_PTS525SM15SMTR2LFS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2108,19 +2108,7 @@
 					)
 				)
 			)
-			(property "Description" "Tactile Switch SPST-NO Top Actuated Surface Mount"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MANUFACTURER_NAME" "C & K COMPONENTS"
+			(property "Description" "Switch;Tactile;SPST-NO;OFF-MOM;Top Act;Surface Mnt;4.3mm;0.02A;15VDC;Gull Wing | C&K PTS525SM15SMTR2 LFS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2144,19 +2132,7 @@
 					(justify bottom)
 				)
 			)
-			(property "MOUSER_PRICE-STOCK" "https://www.mouser.co.uk/ProductDetail/CK/PTS526-SM15-SMTR2-LFS?qs=UXgszm6BlbENivbslIA%252B5g%3D%3D"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "MOUSER_PART_NUMBER" "611-PTS526SM15SMTR2L"
+			(property "Package" "Tactile Switch CK"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2180,7 +2156,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Package" "None"
+			(property "Check_prices" "https://www.snapeda.com/parts/PTS525SM15SMTR2%20LFS/C%2526K/view-part/?ref=eda"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2192,7 +2168,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Check_prices" "https://www.snapeda.com/parts/PTS526%20SM15%20SMTR2%20LFS/C%2526K/view-part/?ref=eda"
+			(property "STANDARD" "Manufacturer REcommendation"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2204,7 +2180,7 @@
 					(justify bottom)
 				)
 			)
-			(property "HEIGHT" "1.5mm"
+			(property "PARTREV" "NA"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2216,7 +2192,7 @@
 					(justify bottom)
 				)
 			)
-			(property "MP" "PTS526 SM15 SMTR2 LFS"
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/PTS525SM15SMTR2%20LFS/C%2526K/view-part/?ref=snap"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2228,31 +2204,7 @@
 					(justify bottom)
 				)
 			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/PTS526%20SM15%20SMTR2%20LFS/C%2526K/view-part/?ref=snap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "ARROW_PRICE-STOCK" "https://www.arrow.com/en/products/pts526-sm15-smtr2-lfs/ck"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "ARROW_PART_NUMBER" "PTS526 SM15 SMTR2 LFS"
+			(property "MP" "PTS525SM15SMTR2 LFS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2276,7 +2228,7 @@
 					(justify bottom)
 				)
 			)
-			(property "MANUFACTURER_PART_NUMBER" "PTS526 SM15 SMTR2 LFS"
+			(property "MANUFACTURER" "C & K"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2288,13 +2240,72 @@
 					(justify bottom)
 				)
 			)
-			(symbol "PTS526_SM15_SMTR2_LFS_0_0"
+			(symbol "PTS525SM15SMTR2LFS_0_0"
 				(polyline
 					(pts
-						(xy -2.54 1.27) (xy -1.27 1.27)
+						(xy -5.08 2.54) (xy -2.54 2.54)
 					)
 					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 5.08)
+					(stroke
 						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -2.54 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -5.08 -2.54)
+					)
+					(stroke
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2302,10 +2313,10 @@
 					)
 				)
 				(circle
-					(center -2.54 0)
-					(radius 0.127)
+					(center -1.27 0)
+					(radius 0.1905)
 					(stroke
-						(width 0.4064)
+						(width 0.381)
 						(type default)
 					)
 					(fill
@@ -2314,10 +2325,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 1.905) (xy -1.27 1.27)
+						(xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2326,46 +2337,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 1.905) (xy 1.27 1.905)
+						(xy 1.27 0) (xy 2.54 0)
 					)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.905) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 2.54 1.27)
-					)
-					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2373,10 +2348,58 @@
 					)
 				)
 				(circle
-					(center 2.54 0)
-					(radius 0.127)
+					(center 1.27 0)
+					(radius 0.1905)
 					(stroke
-						(width 0.4064)
+						(width 0.381)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -2384,8 +2407,8 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
+					(at -10.16 2.54 0)
+					(length 5.08)
 					(name ""
 						(effects
 							(font
@@ -2402,9 +2425,8 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(hide yes)
+					(at -10.16 -2.54 0)
+					(length 5.08)
 					(name ""
 						(effects
 							(font
@@ -2421,8 +2443,8 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
+					(at 10.16 2.54 180)
+					(length 5.08)
 					(name ""
 						(effects
 							(font
@@ -2439,9 +2461,8 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(hide yes)
+					(at 10.16 -2.54 180)
+					(length 5.08)
 					(name ""
 						(effects
 							(font
@@ -3617,8 +3638,16 @@
 		(uuid "a6a9deb1-da0c-4fd4-b032-5b5cf9783c9c")
 	)
 	(no_connect
+		(at 175.26 125.73)
+		(uuid "abe5c524-b5bd-4d2d-93d2-7f06f00d5642")
+	)
+	(no_connect
 		(at 204.47 74.93)
 		(uuid "c17c3e93-9dfc-4734-901c-77b1a13b5249")
+	)
+	(no_connect
+		(at 191.77 130.81)
+		(uuid "c1ca2755-f837-4873-b7d8-4b57d129907e")
 	)
 	(no_connect
 		(at 175.26 74.93)
@@ -3627,6 +3656,14 @@
 	(no_connect
 		(at 204.47 77.47)
 		(uuid "c98c7901-45d6-4267-b43c-323c9c8eea46")
+	)
+	(no_connect
+		(at 154.94 130.81)
+		(uuid "dd4fe797-e694-4ea9-b6e8-994823f3aa14")
+	)
+	(no_connect
+		(at 212.09 125.73)
+		(uuid "e0417a92-03c2-466c-ad23-59924d2fd9b9")
 	)
 	(no_connect
 		(at 97.79 60.96)
@@ -4178,16 +4215,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 125.73) (xy 208.28 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73172494-0c63-48c2-adde-0bd527e82642")
-	)
-	(wire
-		(pts
 			(xy 107.95 45.72) (xy 133.35 45.72)
 		)
 		(stroke
@@ -4478,7 +4505,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 125.73) (xy 172.72 125.73)
+			(xy 175.26 130.81) (xy 181.61 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4648,6 +4675,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 125.73) (xy 191.77 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c05f8ade-0220-4a5a-bfeb-27e79d570dbd")
+	)
+	(wire
+		(pts
 			(xy 118.11 151.13) (xy 118.11 153.67)
 		)
 		(stroke
@@ -4778,13 +4815,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 125.73) (xy 190.5 125.73)
+			(xy 212.09 130.81) (xy 218.44 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d492bb6a-fad9-41a0-bf72-c7a9b86e212a")
+		(uuid "d7048b93-8ddf-488d-aca3-e8959580ed8c")
 	)
 	(wire
 		(pts
@@ -5047,7 +5084,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 163.83 107.442 90)
 			(hide yes)
 			(show_name no)
@@ -5087,7 +5124,7 @@
 			(uuid "bf7f2bed-1f7d-46ec-ac34-52dca9e68544")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "R12")
 					(unit 1)
@@ -5164,7 +5201,7 @@
 			(uuid "4cee9d41-a469-416c-816f-1ba5e5b07d4c")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#FLG013")
 					(unit 1)
@@ -5243,7 +5280,7 @@
 			(uuid "f13a30f9-59cc-47af-9adb-60c4dd57d9ee")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR0102")
 					(unit 1)
@@ -5320,7 +5357,7 @@
 			(uuid "ec105e47-edb4-4713-98fd-5010287dbe9f")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR087")
 					(unit 1)
@@ -5362,7 +5399,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 63.5 53.594 0)
 			(hide yes)
 			(show_name no)
@@ -5402,7 +5439,7 @@
 			(uuid "e10b35d1-9c25-4592-acfc-72e8fc1677e3")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "M6")
 					(unit 1)
@@ -5442,7 +5479,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 87.63 130.5052 0)
 			(hide yes)
 			(show_name no)
@@ -5482,7 +5519,7 @@
 			(uuid "c8fd29de-2a8f-4564-80a4-b704604eb3a6")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C16")
 					(unit 1)
@@ -5560,7 +5597,7 @@
 			(uuid "60d58256-6806-4905-8dd4-1ea7cc3cb8cd")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR098")
 					(unit 1)
@@ -5666,7 +5703,7 @@
 			(uuid "159d5cea-f544-4f28-8dfe-206acf46a380")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "U11")
 					(unit 1)
@@ -5745,7 +5782,7 @@
 			(uuid "c36bcd13-4620-429f-9887-1518089ee6e1")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR0104")
 					(unit 1)
@@ -5824,7 +5861,7 @@
 			(uuid "3f16fb17-4117-4f0a-a165-8d254b333364")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR027")
 					(unit 1)
@@ -5866,7 +5903,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 95.25 154.6352 0)
 			(hide yes)
 			(show_name no)
@@ -5906,7 +5943,7 @@
 			(uuid "08d09f1b-2214-49f5-98cd-31f7aa7e8c38")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C17")
 					(unit 1)
@@ -5985,7 +6022,7 @@
 			(uuid "aa8fe082-77d7-440c-84bc-a3bf94fafe3b")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR091")
 					(unit 1)
@@ -6062,7 +6099,7 @@
 			(uuid "8d076238-2ad7-4dce-a82a-138585d7315a")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#FLG07")
 					(unit 1)
@@ -6104,7 +6141,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 221.2848 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6144,7 +6181,7 @@
 			(uuid "ae65db6e-f62e-483d-802b-cccc6ee5f5cc")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C20")
 					(unit 1)
@@ -6250,7 +6287,7 @@
 			(uuid "fabb7db4-21ea-4b04-9929-295945749ca9")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "U9")
 					(unit 1)
@@ -6327,7 +6364,7 @@
 			(uuid "82d841e7-bded-4966-969f-908eac1df8d0")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#FLG015")
 					(unit 1)
@@ -6406,7 +6443,7 @@
 			(uuid "c717c420-7a2d-42b6-ab53-e29a985e743f")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#FLG011")
 					(unit 1)
@@ -6566,7 +6603,7 @@
 			(uuid "036b79a9-aa00-4b89-9017-af17e8a3f420")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "U16")
 					(unit 1)
@@ -6608,7 +6645,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 118.11 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6648,86 +6685,9 @@
 			(uuid "4f60392b-220f-4632-b609-915a7960e03b")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 208.28 125.73 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "52a9f052-eb95-42d3-a873-b686e55f8995")
-		(property "Reference" "#PWR095"
-			(at 214.63 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 212.598 127.762 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.28 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 208.28 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f070185b-85a0-4748-882f-5d9060339218")
-		)
-		(instances
-			(project "Blind_Assistance_EE_Project"
-				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
-					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -6765,7 +6725,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 74.93 79.7052 0)
 			(hide yes)
 			(show_name no)
@@ -6805,7 +6765,7 @@
 			(uuid "a375bea9-57a0-480e-9552-b6ee9d1558eb")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C12")
 					(unit 1)
@@ -6845,7 +6805,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 87.63 65.7352 0)
 			(hide yes)
 			(show_name no)
@@ -6885,7 +6845,7 @@
 			(uuid "b42517e7-94f8-49e2-894c-640b190ce067")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C14")
 					(unit 1)
@@ -6924,7 +6884,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 			(at 104.14 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -6964,7 +6924,7 @@
 			(uuid "b06c19ed-e47e-4a15-b8cb-38ee139c8ea7")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "D4")
 					(unit 1)
@@ -7042,7 +7002,7 @@
 			(uuid "ac9c1bd6-b709-44dd-9842-81bede057bad")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR023")
 					(unit 1)
@@ -7121,264 +7081,9 @@
 			(uuid "fab0211c-0457-4124-8d2e-24e4b7e36b32")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR092")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "New_Library2:PTS526_SM15_SMTR2_LFS")
-		(at 160.02 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "61e0371b-8a35-4d8e-a12e-6aed2006d97f")
-		(property "Reference" "SW3"
-			(at 158.75 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PTS526_SM15_SMTR2_LFS"
-			(at 160.02 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PTS526_SM15_SMTR2_LFS:PTS526SM15SMTR2LFS"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Tactile Switch SPST-NO Top Actuated Surface Mount"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER_NAME" "C & K COMPONENTS"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "C&K"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MOUSER_PRICE-STOCK" "https://www.mouser.co.uk/ProductDetail/CK/PTS526-SM15-SMTR2-LFS?qs=UXgszm6BlbENivbslIA%252B5g%3D%3D"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MOUSER_PART_NUMBER" "611-PTS526SM15SMTR2L"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "None"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/PTS526%20SM15%20SMTR2%20LFS/C%2526K/view-part/?ref=eda"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "HEIGHT" "1.5mm"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "PTS526 SM15 SMTR2 LFS"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PTS526%20SM15%20SMTR2%20LFS/C%2526K/view-part/?ref=snap"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "ARROW_PRICE-STOCK" "https://www.arrow.com/en/products/pts526-sm15-smtr2-lfs/ck"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "ARROW_PART_NUMBER" "PTS526 SM15 SMTR2 LFS"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" "PTS526 SM15 SMTR2 LFS"
-			(at 160.02 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "2"
-			(uuid "c287248b-b3b7-41f8-986a-5bdcf0f31329")
-		)
-		(pin "1"
-			(uuid "6ac3e8fd-b854-4fa2-9d7a-afc96aa2fe02")
-		)
-		(pin "4"
-			(uuid "3831da99-0c71-4f0e-8816-60aa36a2985e")
-		)
-		(pin "3"
-			(uuid "dc52f552-834f-4dba-a242-86eca19b9b86")
-		)
-		(instances
-			(project "Blind_Assistance_EE_Project"
-				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
-					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -7416,7 +7121,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 74.93 110.1852 0)
 			(hide yes)
 			(show_name no)
@@ -7456,7 +7161,7 @@
 			(uuid "5193243f-117b-4cb8-9afd-b6f6eb8c646e")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C13")
 					(unit 1)
@@ -7534,7 +7239,7 @@
 			(uuid "eced791a-bd7d-4d39-b53b-c016e123916d")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR099")
 					(unit 1)
@@ -7575,7 +7280,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 218.1352 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7615,7 +7320,7 @@
 			(uuid "781798dc-7cc6-495d-aea8-5339dbb10bbd")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C19")
 					(unit 1)
@@ -7694,7 +7399,7 @@
 			(uuid "5648c2a4-29ea-4ce4-8541-d301e21b388f")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR0103")
 					(unit 1)
@@ -7773,7 +7478,7 @@
 			(uuid "2bd7af57-f740-40ed-bd43-80562e818c33")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR025")
 					(unit 1)
@@ -7850,7 +7555,7 @@
 			(uuid "a41fef89-1776-4100-b26e-e8e411a5ffea")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR086")
 					(unit 1)
@@ -7892,7 +7597,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 140.97 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -7932,7 +7637,7 @@
 			(uuid "9b3cb3f7-ead0-4d9a-87d1-ecbb16138fc2")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "J4")
 					(unit 1)
@@ -8024,7 +7729,7 @@
 			(uuid "f1b4b8fb-121a-4a71-af20-2180e9d2de11")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "U5")
 					(unit 1)
@@ -8103,9 +7808,217 @@
 			(uuid "aeb172ef-7543-46da-b829-a0113b2920a3")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#FLG012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "New_Library2:PTS525SM15SMTR2LFS")
+		(at 201.93 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e38864c-faf7-4ded-85db-5157a7b5be3f")
+		(property "Reference" "S2"
+			(at 201.93 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTS525SM15SMTR2LFS"
+			(at 201.93 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PTS525SM15SMTR2LFS:SW_PTS525SM15SMTR2LFS"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch;Tactile;SPST-NO;OFF-MOM;Top Act;Surface Mnt;4.3mm;0.02A;15VDC;Gull Wing | C&K PTS525SM15SMTR2 LFS"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "C&K"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "Tactile Switch CK"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PTS525SM15SMTR2%20LFS/C%2526K/view-part/?ref=eda"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer REcommendation"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "NA"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PTS525SM15SMTR2%20LFS/C%2526K/view-part/?ref=snap"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "PTS525SM15SMTR2 LFS"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "C & K"
+			(at 201.93 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "4195f44a-62b5-48a0-ae6d-e2d29cef9ff7")
+		)
+		(pin "1"
+			(uuid "135c7d02-cb70-45a0-88bd-33f224fd45a7")
+		)
+		(pin "3"
+			(uuid "a963f647-7a78-49f0-bfbb-38de0cc46bbc")
+		)
+		(pin "4"
+			(uuid "209eaca8-d36c-4379-b573-48cd3f677adb")
+		)
+		(instances
+			(project "Blind_Assistance_EE_Project [final draft)"
+				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
+					(reference "S2")
 					(unit 1)
 				)
 			)
@@ -8143,7 +8056,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 104.14 169.418 90)
 			(hide yes)
 			(show_name no)
@@ -8183,7 +8096,7 @@
 			(uuid "b1631999-7c5d-48b6-8ee3-46c4dd207697")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "R11")
 					(unit 1)
@@ -8262,7 +8175,7 @@
 			(uuid "7bb26f22-dfbf-4114-8192-5aa112163751")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "D5")
 					(unit 1)
@@ -8340,7 +8253,7 @@
 			(uuid "aad842a6-7b56-4884-8cab-b1478c18d81c")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR019")
 					(unit 1)
@@ -8418,7 +8331,7 @@
 			(uuid "4c20ea35-c06a-481e-b287-fa502ee69dcd")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR020")
 					(unit 1)
@@ -8460,7 +8373,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 146.05 154.6352 0)
 			(hide yes)
 			(show_name no)
@@ -8500,7 +8413,7 @@
 			(uuid "25f2a8b3-0a8b-4f44-9093-5ff7170576b3")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C18")
 					(unit 1)
@@ -8542,7 +8455,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 63.5 117.094 0)
 			(hide yes)
 			(show_name no)
@@ -8582,7 +8495,7 @@
 			(uuid "cc24df95-0787-4350-a778-a49221cd4b47")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "M10")
 					(unit 1)
@@ -8622,7 +8535,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 87.63 98.7552 0)
 			(hide yes)
 			(show_name no)
@@ -8662,7 +8575,7 @@
 			(uuid "e8776234-ae4c-40d1-bcef-f3ad0bbff517")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C15")
 					(unit 1)
@@ -8739,7 +8652,7 @@
 			(uuid "e209be8a-5662-4373-a635-ec1d008e63c9")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR080")
 					(unit 1)
@@ -8816,7 +8729,7 @@
 			(uuid "ecdae664-4865-42b9-ad5b-a1f0015e62e3")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR022")
 					(unit 1)
@@ -8895,7 +8808,7 @@
 			(uuid "b2d17232-fc25-4c84-89ce-1027bb1596b3")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR0101")
 					(unit 1)
@@ -8973,7 +8886,7 @@
 			(uuid "8766a7ff-039c-4178-aa25-991562217773")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR072")
 					(unit 1)
@@ -9013,7 +8926,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ESP32-S3-SuperMini:ESP32-S3-SuperMini"
+		(property "Footprint" "esp32:ESP32-S3-SuperMini (1)"
 			(at 160.02 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -9101,7 +9014,7 @@
 			(uuid "318bdd75-fff4-41d1-acae-6e7b3797a03b")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "U15")
 					(unit 1)
@@ -9180,7 +9093,7 @@
 			(uuid "da63c568-59e5-458b-9f6b-6c7b12f1f5e4")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR093")
 					(unit 1)
@@ -9286,7 +9199,7 @@
 			(uuid "32434d4c-58c3-444f-9dc0-f4f5d0fb4085")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "U10")
 					(unit 1)
@@ -9364,7 +9277,7 @@
 			(uuid "63478d3e-e486-4e36-8b13-0357d63f27a7")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR024")
 					(unit 1)
@@ -9442,265 +9355,9 @@
 			(uuid "50ff6765-71fa-4980-be16-44fa0c233567")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR097")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "New_Library2:PTS526_SM15_SMTR2_LFS")
-		(at 195.58 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a8cbbec4-888c-4e9b-b2a4-813cb9dd7a21")
-		(property "Reference" "SW4"
-			(at 195.58 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PTS526_SM15_SMTR2_LFS"
-			(at 195.58 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PTS526_SM15_SMTR2_LFS:PTS526SM15SMTR2LFS"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Tactile Switch SPST-NO Top Actuated Surface Mount"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER_NAME" "C & K COMPONENTS"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MF" "C&K"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MOUSER_PRICE-STOCK" "https://www.mouser.co.uk/ProductDetail/CK/PTS526-SM15-SMTR2-LFS?qs=UXgszm6BlbENivbslIA%252B5g%3D%3D"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MOUSER_PART_NUMBER" "611-PTS526SM15SMTR2L"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "None"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/PTS526%20SM15%20SMTR2%20LFS/C%2526K/view-part/?ref=eda"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "HEIGHT" "1.5mm"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "PTS526 SM15 SMTR2 LFS"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PTS526%20SM15%20SMTR2%20LFS/C%2526K/view-part/?ref=snap"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "ARROW_PRICE-STOCK" "https://www.arrow.com/en/products/pts526-sm15-smtr2-lfs/ck"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "ARROW_PART_NUMBER" "PTS526 SM15 SMTR2 LFS"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER_PART_NUMBER" "PTS526 SM15 SMTR2 LFS"
-			(at 195.58 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "2"
-			(uuid "cac28276-5a7e-416b-a73c-ac224be005fe")
-		)
-		(pin "1"
-			(uuid "3a149d5c-fbad-4ec8-b6b4-10345bdc8bfb")
-		)
-		(pin "4"
-			(uuid "47e013df-529b-4cf6-97df-db3914792a8f")
-		)
-		(pin "3"
-			(uuid "ae601616-a360-4b96-8c39-49aec64a4b3a")
-		)
-		(instances
-			(project "Blind_Assistance_EE_Project"
-				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
-					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -9778,7 +9435,7 @@
 			(uuid "9789a505-fcf8-4c79-96b9-4ff2d0c9150b")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR090")
 					(unit 1)
@@ -9855,7 +9512,7 @@
 			(uuid "a623739f-51d0-4e05-b627-61f3dad6b042")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#FLG010")
 					(unit 1)
@@ -9932,7 +9589,7 @@
 			(uuid "dac839bc-31c1-4a84-9175-997eccc6f5bb")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR079")
 					(unit 1)
@@ -9941,8 +9598,216 @@
 		)
 	)
 	(symbol
+		(lib_id "New_Library2:PTS525SM15SMTR2LFS")
+		(at 165.1 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b97e1a3b-eb88-42b9-a039-565210238f5c")
+		(property "Reference" "S1"
+			(at 165.1 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTS525SM15SMTR2LFS"
+			(at 165.1 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PTS525SM15SMTR2LFS:SW_PTS525SM15SMTR2LFS"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch;Tactile;SPST-NO;OFF-MOM;Top Act;Surface Mnt;4.3mm;0.02A;15VDC;Gull Wing | C&K PTS525SM15SMTR2 LFS"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MF" "C&K"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "Tactile Switch CK"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/PTS525SM15SMTR2%20LFS/C%2526K/view-part/?ref=eda"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer REcommendation"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "NA"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/PTS525SM15SMTR2%20LFS/C%2526K/view-part/?ref=snap"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "PTS525SM15SMTR2 LFS"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "C & K"
+			(at 165.1 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "2"
+			(uuid "8136a012-82ae-4322-ae04-436c374ff92d")
+		)
+		(pin "1"
+			(uuid "109c2a24-2d5a-492f-b405-fe0115b260a7")
+		)
+		(pin "3"
+			(uuid "391dd979-6ece-4184-9c2f-d9a5fe5fd0e8")
+		)
+		(pin "4"
+			(uuid "73181a28-0c90-46cc-93a6-8e84a6c2517c")
+		)
+		(instances
+			(project "Blind_Assistance_EE_Project [final draft)"
+				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 172.72 125.73 90)
+		(at 181.61 130.81 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9952,7 +9817,7 @@
 		(dnp no)
 		(uuid "bfe8984f-798e-4918-97bc-825eda7c11f1")
 		(property "Reference" "#PWR088"
-			(at 179.07 125.73 0)
+			(at 187.96 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9963,7 +9828,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 176.784 128.016 90)
+			(at 185.674 133.096 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9973,7 +9838,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 125.73 0)
+			(at 181.61 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9984,7 +9849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 125.73 0)
+			(at 181.61 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9995,7 +9860,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 125.73 0)
+			(at 181.61 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10009,7 +9874,7 @@
 			(uuid "d3e9109f-41ec-4d32-8009-21a955ce3824")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR088")
 					(unit 1)
@@ -10049,7 +9914,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 74.93 46.6852 0)
 			(hide yes)
 			(show_name no)
@@ -10089,7 +9954,7 @@
 			(uuid "62c254de-0f96-4edd-8412-05d1f16a0c33")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C11")
 					(unit 1)
@@ -10166,7 +10031,7 @@
 			(uuid "b956c818-63a6-4656-9253-202b79a61aa4")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR081")
 					(unit 1)
@@ -10244,7 +10109,7 @@
 			(uuid "cb1239bd-7717-4e83-b08d-0538a9e4342b")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR096")
 					(unit 1)
@@ -10321,9 +10186,86 @@
 			(uuid "4ccef696-1665-4428-8af6-1e283bf67c30")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#FLG014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 130.81 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c8fc9642-343f-4d72-af71-2a5e5b6e8804")
+		(property "Reference" "#PWR095"
+			(at 224.79 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 222.504 133.096 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 218.44 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9614b781-51e7-4f7a-8953-62ce532bcee8")
+		)
+		(instances
+			(project "Blind_Assistance_EE_Project [final draft)"
+				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -10360,7 +10302,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 195.58 111.252 90)
 			(hide yes)
 			(show_name no)
@@ -10400,7 +10342,7 @@
 			(uuid "e4d1077d-fce5-4ba9-8807-7b1213d7c43f")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "R19")
 					(unit 1)
@@ -10478,7 +10420,7 @@
 			(uuid "e95a6df7-08e9-4dcb-b9be-2af91dcbea56")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR0100")
 					(unit 1)
@@ -10558,7 +10500,7 @@
 			(uuid "454d08e8-d825-44bf-b618-73ad67024697")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR094")
 					(unit 1)
@@ -10636,7 +10578,7 @@
 			(uuid "d617c681-3cfb-46d2-a8b3-f86c46893d9f")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR021")
 					(unit 1)
@@ -10715,7 +10657,7 @@
 			(uuid "00b1c36b-c0d1-4bd1-8590-29e7bd1be0d5")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR089")
 					(unit 1)
@@ -10757,7 +10699,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 240.3348 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -10797,7 +10739,7 @@
 			(uuid "8e0f8ee3-32ab-4039-a9d8-31ddc3c8e24b")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "C21")
 					(unit 1)
@@ -10874,7 +10816,7 @@
 			(uuid "047928b8-a4c9-4285-9710-7b96579a3192")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#FLG09")
 					(unit 1)
@@ -10916,7 +10858,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 63.5 85.344 0)
 			(hide yes)
 			(show_name no)
@@ -10956,7 +10898,7 @@
 			(uuid "13fdb2d3-01a6-4190-8c29-7abc6320155c")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "M8")
 					(unit 1)
@@ -11035,7 +10977,7 @@
 			(uuid "5693b062-d86c-4068-b3a1-063d2945cc50")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR026")
 					(unit 1)
@@ -11112,7 +11054,7 @@
 			(uuid "12740984-0012-49f7-a218-3cc774f1a408")
 		)
 		(instances
-			(project "Blind_Assistance_EE_Project"
+			(project "Blind_Assistance_EE_Project [final draft)"
 				(path "/c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
 					(reference "#PWR082")
 					(unit 1)

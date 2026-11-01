@@ -425,18 +425,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Blind_Assistance_EE_Project.kicad_sch",
-        "name": "Root",
+        "filename": "Blind_Assistance_EE_Project [final draft).kicad_sch",
+        "name": "Blind_Assistance_EE_Project [final draft)",
         "uuid": "c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc"
       }
     ],
-    "used_designators": "#FLG2,#FLG7,#FLG9-15,#PWR72,#PWR79-82,#PWR86-104,C17-21,D4-5,J3-4,R11-12,R19,SW3-4,U5,U11,U15-16",
+    "used_designators": "#FLG2,#FLG7,#FLG9-15,#PWR72,#PWR79-82,#PWR86-104,C17-21,D4-5,J3-4,R11-12,R19,S1-2,SW1,SW3-4,U5,U11,U15-16",
     "variants": []
   },
   "sheets": [
     [
       "c8956a72-5bd8-4ec1-ae1f-4ae74ed82bdc",
-      "Root"
+      "Blind_Assistance_EE_Project [final draft)"
     ]
   ],
   "text_variables": {},
