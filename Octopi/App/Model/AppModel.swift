@@ -29,6 +29,9 @@ final class AppModel {
     }
     var isSimulating: Bool { didSet { applySimulation() } }
     private(set) var started = false
+    #if DEBUG
+    private var demo: DemoDriver?
+    #endif
     private var ticker: Timer?
     private var fastTicker: Timer?
     private var lastSavedBeacons: [PairedBeacon] = []
@@ -42,6 +45,8 @@ final class AppModel {
         let placeStore = JSONPlaceStore.inDocuments()
         let arguments = ProcessInfo.processInfo.arguments
         if arguments.contains("-uiTesting") { UIView.setAnimationsEnabled(false) }
+        if arguments.contains("-skipSetup") { store.setupComplete = true; setupComplete = true }
+
         if arguments.contains("-resetState") {
             // Must happen before the session loads the store.
             store.setupComplete = false
@@ -119,6 +124,12 @@ final class AppModel {
             if settingsStore.bandIdentifier != nil { bluetooth.connectBand() }
         }
         applySimulation()
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("-demoWalk") {
+            demo = DemoDriver(model: self)
+            demo?.start()
+        }
+        #endif
         ticker = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             Task { @MainActor in self?.tick() }
         }
@@ -132,6 +143,9 @@ final class AppModel {
 
     private func tick() {
         session.tick()
+        #if DEBUG
+        demo?.tick(now: ProcessInfo.processInfo.systemUptime)
+        #endif
         bluetooth.pruneStaleBeacons()
         if session.beacons != lastSavedBeacons {
             lastSavedBeacons = session.beacons
@@ -250,6 +264,9 @@ final class AppModel {
     func pair(_ beacon: BluetoothService.NearbyBeacon, name: String) {
         session.pairBeacon(beacon.advertisement, name: name)
         revision += 1
+        #if DEBUG
+        demo?.didPair(serial: beacon.advertisement.serial)
+        #endif
     }
 
     func unpair(_ beacon: PairedBeacon) { session.unpairBeacon(beacon.id); revision += 1 }

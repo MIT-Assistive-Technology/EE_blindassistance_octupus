@@ -40,6 +40,7 @@ struct HomeView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $droppingPin) { DropPinView() }
+        .onAppear { if ProcessInfo.processInfo.arguments.contains("-open=dropPin") { droppingPin = true } }
         .accessibilityAction(.magicTap) {
             model.dropPin()
         }

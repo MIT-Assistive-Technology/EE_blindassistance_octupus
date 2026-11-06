@@ -1,3 +1,4 @@
+import OctopiCore
 import SwiftUI
 
 /// Every pushed screen is a value so the stack can be popped to Home programmatically.
@@ -48,6 +49,7 @@ struct RootView: View {
             case "tutorial": path.append(Route.tutorial)
             case "places": path.append(Route.places)
             case "beacons": path.append(Route.beacons)
+            case "place": if let first = model.places.first { path.append(Route.places); path.append(Route.place(first.id)) }
             default: break
             }
         }
