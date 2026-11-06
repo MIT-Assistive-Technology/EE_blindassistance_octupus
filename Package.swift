@@ -50,6 +50,7 @@ let package = Package(
             name: "OctopiCoreTests",
             dependencies: ["OctopiCore"],
             path: "Octopi/Tests/OctopiCoreTests",
+            resources: [.copy("Fixtures/sample-pack.json")],
             swiftSettings: [
                 .defaultIsolation(MainActor.self)
             ]

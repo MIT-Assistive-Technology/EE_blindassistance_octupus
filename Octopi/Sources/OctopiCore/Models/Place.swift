@@ -25,6 +25,8 @@ public enum PlaceOrigin: String, Codable, Sendable {
     case bandButton
     case app
     case leftBehind
+    /// Came from a pack file (shared by a friend, an O&M specialist, or another phone).
+    case imported
 }
 
 /// A plain-language confidence estimate, with the reasons so the narrator can explain it.
@@ -74,9 +76,12 @@ public struct Place: Codable, Equatable, Identifiable, Sendable {
     /// When `anchor` is nil the path is relative to an arbitrary origin identified by this id; it is only
     /// navigable while the session is still in that same frame.
     public var frameID: UUID?
+    /// Name of the pack this place was imported from, if any. Searchable.
+    public var source: String?
 
-    public init(id: UUID = UUID(), name: String, kind: PlaceKind, origin: PlaceOrigin, anchor: Anchor?, path: StoredPath, confidence: Confidence, createdAt: Date, lastHeard: Date? = nil, lastRSSI: Double? = nil, pressureDeltaKPa: Double? = nil, frameID: UUID? = nil) {
+    public init(id: UUID = UUID(), name: String, kind: PlaceKind, origin: PlaceOrigin, anchor: Anchor?, path: StoredPath, confidence: Confidence, createdAt: Date, lastHeard: Date? = nil, lastRSSI: Double? = nil, pressureDeltaKPa: Double? = nil, frameID: UUID? = nil, source: String? = nil) {
         self.frameID = frameID
+        self.source = source
         self.id = id
         self.name = name
         self.kind = kind
