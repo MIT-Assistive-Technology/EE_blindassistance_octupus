@@ -8,11 +8,13 @@ final class OctopiUITests: XCTestCase {
     override func setUp() {
         continueAfterFailure = false
         app = XCUIApplication()
-        app.launchArguments = ["-resetState", "-simulateHardware"]
+        app.launchArguments = ["-resetState", "-simulateHardware", "-uiTesting"]
         app.launch()
     }
 
     private func audit(_ screen: String, file: StaticString = #filePath, line: UInt = #line) throws {
+        // Let push/sheet transitions finish; the audit samples pixels and a mid-fade button fails contrast.
+        Thread.sleep(forTimeInterval: 0.8)
         // The audit has a fixed internal timeout that a slow simulator can trip; one retry is enough.
         do {
             try runAudit(screen)
@@ -25,9 +27,19 @@ final class OctopiUITests: XCTestCase {
         try app.performAccessibilityAudit(for: .all) { issue in
             // Dynamic Type at the largest sizes legitimately clips some decorative icons in SF Symbols labels;
             // everything else must pass.
-            let ignored = issue.auditType == .textClipped && issue.element?.elementType == .image
+            var ignored = issue.auditType == .textClipped && issue.element?.elementType == .image
+            // Contrast is sampled from pixels, so an element that is only partly on screen (under the
+            // translucent navigation bar or cut by the bottom edge) gives a meaningless reading.
+            if issue.auditType == .contrast, let frame = issue.element?.frame {
+                let visible = self.app.frame.insetBy(dx: 0, dy: 110)
+                if !visible.contains(frame) { ignored = true }
+            }
             if !ignored {
                 NSLog("A11Y AUDIT [%@]: %@ — %@ (%@)", screen, issue.compactDescription, issue.detailedDescription, issue.element.map { "\($0)" } ?? "no element")
+                // Keep a picture of what the audit saw, for debugging failures.
+                let url = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("audit-\(screen.replacingOccurrences(of: " ", with: "_")).png")
+                try? XCUIScreen.main.screenshot().pngRepresentation.write(to: url)
+                NSLog("A11Y AUDIT shot: %@ frame %@", url.path, issue.element.map { "\($0.frame)" } ?? "-")
             }
             return ignored
         }
@@ -64,7 +76,12 @@ final class OctopiUITests: XCTestCase {
 
         app.buttons["home.find"].tap()
         XCTAssertTrue(app.buttons["place.My seat"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.textFields["places.search"].exists && app.buttons["places.import"].exists)
         try audit("places")
+        app.buttons["Beacons"].tap()
+        XCTAssertFalse(app.buttons["place.My seat"].exists, "pin is hidden by the Beacons filter")
+        app.buttons["All"].tap()
+        XCTAssertTrue(app.buttons["place.My seat"].waitForExistence(timeout: 3))
         app.buttons["place.My seat"].tap()
         XCTAssertTrue(app.buttons["place.guide"].waitForExistence(timeout: 3))
         try audit("place detail")
