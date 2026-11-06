@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSMotionUsageDescription</key>
+	<string>Octopi counts your steps and turns to remember the path back to your pins and beacons.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Octopi uses your last good GPS position as the starting point of each path.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Octopi keeps tracking your path while the phone is in your pocket so it can notice when a beacon is left behind.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Octopi talks to your haptic band and listens for your beacons over Bluetooth.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>bluetooth-central</string>
+		<string>location</string>
+	</array>
+	<key>UIAccessibilitySupportsVoiceOver</key>
+	<true/>
+</dict>
+</plist>
