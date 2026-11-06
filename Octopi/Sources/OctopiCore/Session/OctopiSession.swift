@@ -254,6 +254,23 @@ public final class OctopiSession {
         return "Pin \(number), \(formatter.string(from: date))"
     }
 
+    /// Import a pack of places. Announces the summary.
+    @discardableResult
+    public func importPack(_ pack: PlacePack, policy: PlacePack.MergePolicy = .skipExisting) -> PlacePack.MergeResult {
+        let result = pack.merge(into: places, policy: policy)
+        places = result.places
+        persist()
+        announce("Imported \(pack.name): \(result.spoken)", priority: .high)
+        if result.added > 0 || result.replaced > 0 { haptics.play(.pinConfirmed, parameterMs: nil) }
+        return result
+    }
+
+    /// Bundle places (all by default) into a pack for sharing or backup.
+    public func exportPack(name: String, placeIDs: Set<UUID>? = nil, author: String? = nil) -> PlacePack {
+        let chosen = placeIDs.map { ids in places.filter { ids.contains($0.id) } } ?? places
+        return PlacePack(name: name, author: author, createdAt: wallClock(), places: chosen)
+    }
+
     public func rename(_ placeID: UUID, to name: String) {
         guard let index = places.firstIndex(where: { $0.id == placeID }) else { return }
         places[index].name = name
