@@ -20,7 +20,7 @@ struct HapticTutorialView: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    .buttonStyle(.secondary)
+                    .buttonStyle(.row)
                     .accessibilityLabel("\(pattern.spokenName). \(pattern.feelDescription)")
                     .accessibilityHint("Plays this pattern.")
                     .accessibilityIdentifier("tutorial.\(pattern.rawValue)")

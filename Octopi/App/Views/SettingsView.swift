@@ -45,11 +45,11 @@ struct SettingsView: View {
                 #endif
                 if model.isSimulating {
                     NavigationLink(value: Route.simulator) { Text("Simulator controls") }
-                        .buttonStyle(.secondary)
+                        .buttonStyle(.row)
                         .accessibilityIdentifier("settings.simulator")
                 }
                 NavigationLink(value: Route.diagnostics) { Text("Diagnostics") }
-                    .buttonStyle(.secondary)
+                    .buttonStyle(.row)
                     .accessibilityIdentifier("settings.diagnostics")
             }
             .padding(20)
