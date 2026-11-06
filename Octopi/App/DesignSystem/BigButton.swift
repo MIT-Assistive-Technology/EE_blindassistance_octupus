@@ -127,3 +127,20 @@ struct ChoiceRow: View {
         .accessibilityAddTraits(isSelected ? [.isSelected] : [])
     }
 }
+
+/// Text field that grows with its content and with Dynamic Type instead of clipping.
+struct GrowingTextFieldStyle: ViewModifier {
+    @Environment(\.colorSchemeContrast) private var contrast
+    func body(content: Content) -> some View {
+        content
+            .font(.title3)
+            .lineLimit(1...4)
+            .padding(12)
+            .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 12))
+            .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(Color.primary.opacity(contrast == .increased ? 1 : 0.4), lineWidth: 1.5))
+    }
+}
+
+extension View {
+    func growingTextField() -> some View { modifier(GrowingTextFieldStyle()) }
+}

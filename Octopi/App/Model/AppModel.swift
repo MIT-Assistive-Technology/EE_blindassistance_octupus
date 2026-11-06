@@ -41,6 +41,7 @@ final class AppModel {
         router = HapticRouter(band: nil, phone: nil)
         let placeStore = JSONPlaceStore.inDocuments()
         let arguments = ProcessInfo.processInfo.arguments
+        if arguments.contains("-uiTesting") { UIView.setAnimationsEnabled(false) }
         if arguments.contains("-resetState") {
             // Must happen before the session loads the store.
             store.setupComplete = false
@@ -209,6 +210,41 @@ final class AppModel {
     func findLeftBehindItem() { session.findLeftBehindItem(); revision += 1 }
 
     func rename(_ place: Place, to name: String) { session.rename(place.id, to: name); revision += 1 }
+
+    /// Import a pack file picked by the user. Returns what to tell them.
+    func importPack(from url: URL) -> String {
+        let scoped = url.startAccessingSecurityScopedResource()
+        defer { if scoped { url.stopAccessingSecurityScopedResource() } }
+        do {
+            let pack = try PlacePack.decode(try Data(contentsOf: url))
+            let result = session.importPack(pack)
+            revision += 1
+            return "Imported \(pack.name): \(result.spoken)"
+        } catch let error as PlacePack.PackError {
+            let text = error.errorDescription ?? "Could not read the pack."
+            announcer.announce(Announcement(text, priority: .high))
+            return text
+        } catch {
+            announcer.announce(Announcement("Could not read that file.", priority: .high))
+            return "Could not read that file."
+        }
+    }
+
+    /// Write all places to a pack file in the temporary folder for sharing. Nil when there is nothing to share.
+    func exportPackURL() -> URL? {
+        guard !session.places.isEmpty else { return nil }
+        let pack = session.exportPack(name: "Octopi places \(Self.packStamp.string(from: Date()))", author: UIDevice.current.name)
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent("octopi-places.json")
+        guard let data = try? pack.encoded(), (try? data.write(to: url, options: .atomic)) != nil else { return nil }
+        return url
+    }
+
+    private static let packStamp: DateFormatter = {
+        let f = DateFormatter()
+        f.dateStyle = .medium
+        f.timeStyle = .none
+        return f
+    }()
     func delete(_ place: Place) { session.delete(place.id); revision += 1 }
 
     func pair(_ beacon: BluetoothService.NearbyBeacon, name: String) {

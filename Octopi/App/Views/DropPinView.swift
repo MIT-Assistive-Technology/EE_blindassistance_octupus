@@ -18,9 +18,8 @@ struct NamePicker: View {
                         .buttonStyle(.secondary)
                         .accessibilityIdentifier("name.\(name)")
                 }
-                TextField("Or type a name", text: $custom)
-                    .textFieldStyle(.roundedBorder)
-                    .font(.title3)
+                TextField("Or type a name", text: $custom, axis: .vertical)
+                    .growingTextField()
                     .focused($focused)
                     .submitLabel(.done)
                     .onSubmit { if !custom.isEmpty { onPick(custom) } }

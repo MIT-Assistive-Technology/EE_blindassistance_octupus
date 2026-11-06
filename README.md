@@ -15,6 +15,7 @@ Electrical Engineering/Hardware Side of Blind Assistance! [Team Octupus!]
 | `docs/PLAN.md` | Architecture and module plan |
 | `docs/ACCESSIBILITY.md` | Accessibility rules, vocabulary, checks |
 | `docs/HARDWARE_INTERFACE.md` | Assumptions about band and beacon, and the BLE contract firmware must implement |
+| `docs/PACKS.md`, `docs/sample-pack.json` | The shareable "pack of paths" file format and a sample |
 
 ## Build and test
 
