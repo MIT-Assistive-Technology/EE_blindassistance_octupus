@@ -41,8 +41,15 @@ struct RootView: View {
         }
         .tint(.accentColor)
         .onAppear {
-            // Debug hook: `-openSettings` jumps straight to Settings (used for screenshots).
-            if ProcessInfo.processInfo.arguments.contains("-openSettings"), model.setupComplete { path.append(Route.settings) }
+            // Debug hook: `-open=settings|tutorial|places|beacons` jumps to a screen (used for screenshots).
+            guard model.setupComplete, let arg = ProcessInfo.processInfo.arguments.first(where: { $0.hasPrefix("-open=") }) else { return }
+            switch arg.dropFirst("-open=".count) {
+            case "settings": path.append(Route.settings)
+            case "tutorial": path.append(Route.tutorial)
+            case "places": path.append(Route.places)
+            case "beacons": path.append(Route.beacons)
+            default: break
+            }
         }
     }
 }

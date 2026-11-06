@@ -84,7 +84,7 @@ struct SetupView: View {
             Text("Feel each buzz once so you know what it means.").font(.title3).frame(maxWidth: .infinity, alignment: .leading)
             ForEach(HapticPattern.tutorialOrder) { pattern in
                 Button("\(pattern.spokenName). \(pattern.feelDescription)") { model.playTutorial(pattern) }
-                    .buttonStyle(.secondary)
+                    .buttonStyle(.row)
                     .accessibilityHint("Plays this pattern.")
             }
         }

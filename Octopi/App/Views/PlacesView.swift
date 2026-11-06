@@ -21,7 +21,7 @@ struct PlacesView: View {
                         NavigationLink(value: Route.place(place.id)) {
                             PlaceRowLabel(place: place)
                         }
-                        .buttonStyle(.secondary)
+                        .buttonStyle(.row)
                         .accessibilityLabel(PlaceRowLabel.spoken(place))
                         .accessibilityHint("Opens this place. Then choose Guide me there.")
                         .accessibilityIdentifier("place.\(place.name)")

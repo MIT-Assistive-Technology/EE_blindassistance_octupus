@@ -30,7 +30,7 @@ struct BeaconsView: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    .buttonStyle(.secondary)
+                    .buttonStyle(.row)
                     .accessibilityLabel("Pair beacon ending \(nearby.advertisement.identifier.rawValue.suffix(4)), signal \(Int(nearby.rssi))")
                     .accessibilityHint("Opens a name picker, then pairs it.")
                     .accessibilityIdentifier("beacon.pair.\(nearby.advertisement.serial)")

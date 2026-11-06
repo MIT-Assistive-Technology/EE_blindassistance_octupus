@@ -6,14 +6,16 @@ struct BigButtonStyle: ButtonStyle {
     enum Role { case primary, secondary, destructive }
     var role: Role = .secondary
     var minHeight: CGFloat = 64
+    /// Centre for short titles; leading for row-like buttons whose text wraps.
+    var textAlignment: TextAlignment = .center
     @Environment(\.colorSchemeContrast) private var contrast
     @Environment(\.isEnabled) private var isEnabled
 
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(.title2.weight(.semibold))
-            .multilineTextAlignment(.center)
-            .frame(maxWidth: .infinity, minHeight: minHeight)
+            .multilineTextAlignment(textAlignment)
+            .frame(maxWidth: .infinity, minHeight: minHeight, alignment: textAlignment == .leading ? .leading : .center)
             .padding(.horizontal, 16)
             .padding(.vertical, 12)
             .foregroundStyle(foreground)
@@ -51,6 +53,8 @@ struct BigButtonStyle: ButtonStyle {
 extension ButtonStyle where Self == BigButtonStyle {
     static var primary: BigButtonStyle { BigButtonStyle(role: .primary, minHeight: 88) }
     static var secondary: BigButtonStyle { BigButtonStyle(role: .secondary) }
+    /// A list row that happens to be a button: everything left-aligned, wrapped lines included.
+    static var row: BigButtonStyle { BigButtonStyle(role: .secondary, textAlignment: .leading) }
     static var destructive: BigButtonStyle { BigButtonStyle(role: .destructive) }
 }
 
