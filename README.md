@@ -12,10 +12,6 @@ Electrical Engineering/Hardware Side of Blind Assistance! [Team Octupus!]
 | `Octopi/App`, `Octopi/Octopi.xcodeproj` | **Octopi**, the accessible iOS app (SwiftUI) |
 | `Octopi/UITests` | XCUITest that runs Apple's accessibility audit on every screen |
 | `scripts/a11y_lint.py` | Static accessibility lint for the SwiftUI sources |
-| `docs/PLAN.md` | Architecture and module plan |
-| `docs/ACCESSIBILITY.md` | Accessibility rules, vocabulary, checks |
-| `docs/HARDWARE_INTERFACE.md` | Assumptions about band and beacon, and the BLE contract firmware must implement |
-| `docs/PACKS.md`, `docs/sample-pack.json` | The shareable "pack of paths" file format and a sample |
 
 ## Build and test
 
@@ -30,6 +26,9 @@ Open the app in Xcode: `Octopi/Octopi.xcodeproj`, scheme `Octopi`. Or from the c
 ```bash
 xcodebuild -project Octopi/Octopi.xcodeproj -scheme Octopi -destination 'platform=iOS Simulator,name=iPhone 17,OS=26.2' build
 ```
+
+Design notes (plan, accessibility rules, hardware interface contract, pack format, screenshots) live in a local
+`docs/` folder that is not committed.
 
 Accessibility checks:
 
