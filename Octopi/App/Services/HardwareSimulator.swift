@@ -31,6 +31,7 @@ final class HardwareSimulator {
     private var timer: Timer?
     private var time = ProcessInfo.processInfo.systemUptime
     private var sequence: UInt8 = 0
+    private var lastSampleHeading: Double?
     private let home = GeoFix(latitude: 42.3601, longitude: -71.0942, horizontalAccuracy: 5, timestamp: Date())
 
     var onMotion: ((MotionSample) -> Void)?
@@ -53,6 +54,8 @@ final class HardwareSimulator {
 
     func toggleWalking() { isWalking.toggle() }
     func turn(byDegrees degrees: Double) { heading += degrees * .pi / 180 }
+    /// Face a direction in radians counter-clockwise from east.
+    func setHeading(_ radians: Double) { heading = radians }
 
     /// Feed a good fix at the simulated home position offset by the current PDR position.
     func sendGoodFix() {
@@ -108,6 +111,11 @@ final class HardwareSimulator {
         let q = Quaternion(x: 0, y: 0, z: sin(phi / 2), w: cos(phi / 2))
         let phase = 2 * .pi * 1.8 * t
         let bob = isWalking ? 2 + 2 * sin(phase) : 0.02
-        return MotionSample(elapsed: t, attitude: q, userAcceleration: Vector3(x: 0, y: 0, z: bob), rotationRate: .zero)
+        // Report turns as a yaw rate so the dead reckoner's gyro integration sees them, like a real phone.
+        var delta = heading - (lastSampleHeading ?? heading)
+        while delta > .pi { delta -= 2 * .pi }
+        while delta < -.pi { delta += 2 * .pi }
+        lastSampleHeading = heading
+        return MotionSample(elapsed: t, attitude: q, userAcceleration: Vector3(x: 0, y: 0, z: bob), rotationRate: Vector3(x: 0, y: 0, z: delta / 0.01))
     }
 }
