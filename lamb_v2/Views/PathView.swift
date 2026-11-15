@@ -10,6 +10,7 @@ struct PathView: View {
     @State private var scores: [String: PathScore] = [:]
     @State private var importing = false
     @State private var editingPlanned = false
+    @State private var pathFile: URL?
 
     var body: some View {
         VStack(spacing: 10) {
@@ -31,24 +32,26 @@ struct PathView: View {
             }
             HStack(spacing: 10) {
                 Button {
-                    run.runOffline(samples, visible: settings.visible)
-                } label: {
-                    Label("Run offline", systemImage: "arrow.triangle.2.circlepath")
-                }
-                .buttonStyle(.bordered)
-                .disabled(log.isLogging || settings.mode != "offline")
-                Button {
                     refreshScores()
                 } label: {
                     Label("Compare", systemImage: "arrow.left.and.right")
                 }
                 .buttonStyle(.bordered)
                 .disabled(log.isLogging || planned.legs.isEmpty || shown.isEmpty)
+                Button { savePath() } label: {
+                    Label("Save", systemImage: "square.and.arrow.down")
+                }
+                .buttonStyle(.bordered)
+                .disabled(log.isLogging || shown.isEmpty)
+                if let pathFile {
+                    ShareLink(item: pathFile) { Label("Path", systemImage: "square.and.arrow.up") }
+                        .buttonStyle(.bordered)
+                }
             }
         }
         .padding()
         .background(Color(.systemGroupedBackground))
-        .navigationTitle(settings.mode == "offline" && !log.isLogging ? "Offline path" : "Path")
+        .navigationTitle("Path")
         .toolbar {
             Button { editingPlanned = true } label: { Image(systemName: "signpost.right") }
                 .accessibilityLabel("Planned path")
@@ -80,12 +83,6 @@ struct PathView: View {
             run.show(settings.visible)
             scores = [:]
         }
-        .onChange(of: settings.mode) {
-            if settings.mode == "offline", !log.isLogging {
-                run.runOffline(samples, visible: settings.visible)
-            }
-            scores = [:]
-        }
         .onChange(of: log.isLogging) { _, logging in
             if logging { scores = [:] }
             else { run.show(settings.visible) }
@@ -93,17 +90,23 @@ struct PathView: View {
         .onChange(of: log.fileURL) { loadPlanned() }
     }
 
-    private var shown: [PathLine] {
-        log.isLogging || settings.mode == "online" ? run.lines : run.offlineLines
-    }
+    private var shown: [PathLine] { run.lines }
 
     private func reload() {
         if log.isLogging {
             samples = log.samples
             run.reset()
             run.follow(samples, visible: settings.visible)
-        } else if samples.isEmpty, let url = log.fileURL ?? LogFile.newest() {
-            load(LogFile.load(url))
+        } else if samples.isEmpty {
+            if log.samples.isEmpty, let url = log.fileURL ?? LogFile.newest() {
+                if log.fileURL == nil { log.fileURL = url }
+                log.samples = LogFile.load(url)
+            }
+            if !log.samples.isEmpty { load(log.samples) }
+        }
+        if let csv = log.fileURL {
+            let saved = SavedPath.url(beside: csv)
+            pathFile = FileManager.default.fileExists(atPath: saved.path) ? saved : pathFile
         }
         loadPlanned()
     }
@@ -118,13 +121,18 @@ struct PathView: View {
         samples = loaded
         run.reset()
         run.follow(samples, visible: settings.visible)
-        if settings.mode == "offline" { run.runOffline(samples, visible: settings.visible) }
     }
 
     private func loadPlanned() {
         guard let url = log.fileURL else { planned = PlannedPath(); scores = [:]; return }
         planned = PlannedPath.load(beside: url) ?? PlannedPath()
         scores = [:]
+    }
+
+    private func savePath() {
+        guard let csv = log.fileURL ?? LogFile.newest(), !shown.isEmpty else { return }
+        if log.fileURL == nil { log.fileURL = csv }
+        pathFile = SavedPath.write(shown, beside: csv)
     }
 
     private func refreshScores() {
@@ -144,7 +152,7 @@ private struct PathLineCard: View {
         VStack(alignment: .leading, spacing: 10) {
             Text(line.name).font(.caption.weight(.semibold)).lineLimit(1)
             Text(String(format: "%.1f m", line.finalDisplacement)).font(.title3.monospacedDigit())
-            Text(String(format: "%.2f m/s max", line.maximumSpeed)).font(.caption2).foregroundStyle(.secondary)
+            Text(PathTalk.say(line)).font(.caption).fixedSize(horizontal: false, vertical: true)
             if let score {
                 Text(String(format: "End %.1f m", score.endError)).font(.subheadline)
                 Text(String(format: "Miss %.1f m", score.meanMiss)).font(.subheadline)
@@ -159,7 +167,7 @@ private struct PathLineCard: View {
             }
         }
         .padding(10)
-        .frame(width: 190, alignment: .leading)
+        .frame(width: 280, alignment: .leading)
         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 10))
     }
 }

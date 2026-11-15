@@ -22,21 +22,13 @@ let package = Package(
             name: "OctopiCore",
             path: ".",
             exclude: [
-                "README.md", "docs", "PCB_Wristband", "Octopi/App", "Octopi/Tests", "Octopi/Octopi.xcodeproj",
-                "lamb_v2/App", "lamb_v2/Views", "lamb_v2/IMU Logging", "lamb_v2/MyApp",
+                "README.md", "docs", "wristband_rigid", "Octopi/App", "Octopi/Tests", "Octopi/Octopi.xcodeproj",
+                "lamb_v2/App", "lamb_v2/Views", "lamb_v2/IMU Logging", "lamb_v2/MyApp", "lamb_v2/Tests",
                 "lamb_v2/Lamb--v2--Info.plist", "lamb_v2/lamb_v2.xcodeproj", "lamb_v2/lamb_v2-upload.xcodeproj",
-                "lamb_v2/Path Construction/Later",
                 "lamb_v2/Path Construction/Run",
                 "lamb_v2/Path Construction/Score",
-                "lamb_v2/Path Construction/Filter",
-                "lamb_v2/Path Construction/Attitude",
-                "lamb_v2/Path Construction/Integration",
-                "lamb_v2/Path Construction/Steps/StepOptimizer.swift",
-                "lamb_v2/Path Construction/Steps/FixedHeading.swift",
                 "lamb_v2/Path Construction/Steps/StepPaths.swift",
-                "lamb_v2/Path Construction/Steps/TurnPath.swift",
-                "lamb_v2/Path Construction/Model/StationaryWindow.swift",
-                "lamb_v2/Path Construction/Model/TrapezoidTrack.swift"
+                "lamb_v2/Path Construction/Steps/WalkPath.swift"
             ],
             sources: [
                 "lamb_v2/Path Construction",

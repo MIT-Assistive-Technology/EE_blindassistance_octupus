@@ -126,6 +126,11 @@ final class LogPath: NSObject, CLLocationManagerDelegate {
                     _ = try? FileManager.default.copyItem(at: side, to: sideDest)
                 }
             }
+            let pathSide = SavedPath.url(beside: source)
+            let pathDest = SavedPath.url(beside: dest)
+            if FileManager.default.fileExists(atPath: pathSide.path), !FileManager.default.fileExists(atPath: pathDest.path) {
+                _ = try? FileManager.default.copyItem(at: pathSide, to: pathDest)
+            }
             return dest
         } catch {
             return nil

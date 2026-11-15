@@ -30,18 +30,6 @@ protocol OnlinePath: AnyObject {
     func line() -> PathLine
 }
 
-protocol OfflinePath {
-    var id: String { get }
-    var name: String { get }
-    func run(_ samples: [Sample]) -> PathLine
-}
-
-struct UnavailableVariant: Identifiable {
-    var id: String
-    var name: String
-    var reason: String
-}
-
 struct StepMark {
     var start: Double
     var peak: Double

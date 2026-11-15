@@ -16,6 +16,11 @@
 			path = "IMU Logging";
 			sourceTree = "<group>";
 		};
+		BD7A72D2309B7FDB0019BFEB /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		BD937608308EE48A00B3B31D /* App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = App;
@@ -45,6 +50,7 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
+				BD7A72D2309B7FDB0019BFEB /* Tests */,
 				BD937608308EE48A00B3B31D /* App */,
 				BD93760B308EE4AC00B3B31D /* Views */,
 				BD0E23A5308FBCE300FDC57E /* IMU Logging */,
@@ -68,6 +74,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				BD0E23A5308FBCE300FDC57E /* IMU Logging */,
+				BD7A72D2309B7FDB0019BFEB /* Tests */,
 				BD937608308EE48A00B3B31D /* App */,
 				BD93760B308EE4AC00B3B31D /* Views */,
 				BDC962D6309043F600B3551B /* Path Construction */,
@@ -286,6 +293,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
@@ -328,6 +336,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;

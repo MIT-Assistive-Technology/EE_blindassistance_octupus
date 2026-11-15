@@ -111,7 +111,7 @@ public final class DeadReckoner {
         gyro.push(sample)
         primed = true
         if sample.magneticIsUsable, config.compassBlend > 0 {
-            gyro.heading = HeadingMath.blend(gyro.heading, sample.heading, gain: config.compassBlend)
+            gyro.nudge(toward: sample.heading, gain: config.compassBlend)
         }
         history.add(time: sample.elapsed, heading: gyro.heading)
         axis.push(sample)

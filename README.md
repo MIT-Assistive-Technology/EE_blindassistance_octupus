@@ -1,12 +1,12 @@
-# EE_blindassistance_octupus
-Electrical Engineering/Hardware Side of Blind Assistance! [Team Octupus!]
+# EE_blindassistance_octupi
+Electrical Engineering/Hardware Side of Blind Assistance! [Team Octupi!]
 
 ## What is here
 
 | Folder | What |
 |---|---|
-| `PCB_Wristband/` | KiCad project for the haptic wristband |
-| `lamb_v2/` | **Lamb (v2)**, the IMU logging / dead-reckoning test app (branch `imu-test-code`). Do not edit from the Octopi work; it is our test setup. |
+| `wristband_rigid/` | KiCad project and Gerber files for the rigid haptic wristband PCB |
+| `lamb_v2/` | **Lamb (v2)**, the IMU logging / dead-reckoning test app (maintained on `main`). Do not edit from the Octopi work; it is our test setup. |
 | `Package.swift`, `Octopi/Sources/OctopiCore` | **OctopiCore**, the product app's logic as a Swift package. It compiles the step/heading pipeline from `lamb_v2/Path Construction` unmodified, plus anchors, paths, RSSI, left-behind detection, navigation, haptics and the session coordinator. |
 | `Octopi/Tests/OctopiCoreTests` | Unit tests for the core (Swift Testing) |
 | `Octopi/App`, `Octopi/Octopi.xcodeproj` | **Octopi**, the accessible iOS app (SwiftUI) |
